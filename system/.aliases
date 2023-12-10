@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+# \=== Shortcuts ===\
+alias reload="source ~/.zshrc"
+
+# \=== Docker ===\
+alias up="docker compose up"
+alias upd="docker compose up -d"
+alias down="docker compose down"
+alias run="docker compose run --rm"
+alias dspec="docker compose run --rm -e RAILS_ENV=test app bundle exec rspec"
+alias rubocop="docker compose run --rm app bundle exec rubocop -a"
+alias console="docker compose run --rm app rails console"
+alias consoles="docker compose run --rm app rails console -s"
+alias migrate="docker compose run --rm app rails db:migrate"
+alias rollback="docker compose run --rm app rails db:rollback"
+alias abort="docker compose run --rm app rails db:abort_if_pending_migrations"
+alias seed="docker compose run --rm app rails db:seed"
+alias routes="docker compose run --rm app rails routes"
