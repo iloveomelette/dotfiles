@@ -1,0 +1,21 @@
+# all ignore #
+
+/*
+/.**
+
+# not ignore #
+
+## global ##
+
+!/.gitignore
+!/README.md
+
+## runcom ##
+
+!/runcom/.zshrc
+!/runcom/.zprofile
+
+## system ##
+
+!/system/.aliases
+!/system/.functions
