@@ -1,0 +1,81 @@
+{
+  "files.encoding": "utf8",
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": true,
+  // Bracket Pair Colorizer 2
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  // ESLint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // Prettier
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+
+  // Rails html.erb 入力補完
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+
+  "ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true,
+      "except": ["Metrics/MethodLength"] // because it is annoying that it puts wavy lines to all lines in those methods
+    }
+  },
+  "ruby.format": "rubocop",
+  "files.autoGuessEncoding": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "css.lint.unknownAtRules": "ignore",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Menlo",
+  "editor.fontWeight": "bold",
+  "editor.minimap.enabled": false,
+  "files.associations": {
+    "Schemafile": "ruby"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
+  "window.zoomLevel": 1,
+  "workbench.tree.enableStickyScroll": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "workbench.list.smoothScrolling": true
+}
