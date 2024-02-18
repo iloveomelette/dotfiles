@@ -19,3 +19,10 @@
 
 !/system/.aliases
 !/system/.functions
+
+## vscode ##
+
+!/vscode/
+!/vscode/*
+!/vscode/*.json
+!/vscode/snippets/*.json
