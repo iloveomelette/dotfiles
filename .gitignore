@@ -9,6 +9,13 @@
 
 !/.gitignore
 !/README.md
+!/Makefile
+
+## bin ##
+
+!/bin/
+!/bin/*
+!/bin/init.sh
 
 ## runcom ##
 
