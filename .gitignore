@@ -22,6 +22,7 @@
 !/bin/
 !/bin/*
 !/bin/init.sh
+!/bin/link.sh
 
 ## runcom ##
 
