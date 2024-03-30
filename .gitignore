@@ -11,6 +11,12 @@
 !/README.md
 !/Makefile
 
+## Github ##
+
+!/.github/
+!/.github/*
+!/.github/workflows/action.yml
+
 ## bin ##
 
 !/bin/
