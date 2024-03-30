@@ -12,7 +12,10 @@ fi
 # ================================
 #
 # No output messages about progress or results are displayed.
-xcode-select --install > /dev/null
+if which xcode-select >/dev/null 2>&1; then
+  echo -e "\033[0;32m Installing Xcode...\033[0m"
+  xcode-select --install > /dev/null
+fi
 
 #
 # ================
@@ -21,4 +24,7 @@ xcode-select --install > /dev/null
 #
 # No output messages about progress or results are displayed.
 # doc: https://brew.sh/ja/
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null
+if which brew >/dev/null 2>&1; then
+  echo -e "\033[0;32m Installing Homebrew...\033[0m"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null
+fi
