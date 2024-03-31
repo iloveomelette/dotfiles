@@ -8,3 +8,6 @@ for DOTFILE in "$HOME"/.dotfiles/.??* ; do
 
   ln -snfv "$DOTFILE" "$HOME"
 done
+
+# Wrap up
+unset DOTFILE
