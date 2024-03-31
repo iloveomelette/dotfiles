@@ -7,24 +7,15 @@ if [ "$(uname)" != "Darwin" ]; then
 fi
 
 #
-# ================================
-# Install xcode command line tools
-# ================================
-#
-# No output messages about progress or results are displayed.
-if which xcode-select >/dev/null 2>&1; then
-  echo -e "\033[0;32m Installing Xcode...\033[0m"
-  xcode-select --install > /dev/null
-fi
-
-#
 # ================
 # Install homebrew
 # ================
 #
 # No output messages about progress or results are displayed.
 # doc: https://brew.sh/ja/
-if which brew >/dev/null 2>&1; then
+if command -v brew >/dev/null 2>&1; then
+  echo -e "\033[0;34mInfo\033[0m Since Homebrew is already installed, skip this process."
+else
   echo -e "\033[0;32m Installing Homebrew...\033[0m"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
