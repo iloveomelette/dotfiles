@@ -1,0 +1,21 @@
+cask_args appdir: "/Applications"
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+
+brew "fzf"
+brew "ghq"
+brew "git"
+brew "jq"
+brew "mise"
+brew "python@3.12"
+brew "tree"
+
+cask "docker"
+cask "firefox"
+cask "google-chrome"
+cask "notion"
+cask "visual-studio-code"
+cask "sequel-ace"
