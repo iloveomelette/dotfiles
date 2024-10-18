@@ -77,5 +77,6 @@
   "workbench.tree.enableStickyScroll": true,
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "explicit",
-  "workbench.list.smoothScrolling": true
+  "workbench.list.smoothScrolling": true,
+  "github.copilot.editor.enableAutoCompletions": true
 }
