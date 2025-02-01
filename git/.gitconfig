@@ -1,0 +1,35 @@
+# Special thanks
+# - https://github.com/yuroyoro/dotfiles/blob/master/.gitconfig
+# - https://github.com/yuk1ty/dotfiles/blob/main/dot_config/git/config
+
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = vim
+
+[user]
+  # NOTE: First, set your email `export EMAIL=<YOUR_EMAIL>`.
+  # TODO: I'll think of something better later.
+  name = iloveomelette
+
+[color]
+  # Set color (the following commands will automatically add color)
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+
+[alias]
+st = status
+df = diff
+ds = diff --staged
+ad = add
+cm = commit -m
+po = push origin
+pl = pull origin
+sw = switch
+sc = switch -c
+lon = log --oneline -n
+
+[pull]
+  rebase = false

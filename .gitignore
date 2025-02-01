@@ -40,3 +40,7 @@
 !/vscode/*
 !/vscode/*.json
 !/vscode/snippets/*.json
+
+## git ##
+!/git/
+!/git/.gitconfig
