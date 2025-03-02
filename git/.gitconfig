@@ -6,6 +6,9 @@
   excludesfile = ~/.gitignore_global
   editor = vim
 
+[init]
+  defaultBranch = main
+
 [user]
   # NOTE: First, set your email `export EMAIL=<YOUR_EMAIL>`.
   # TODO: I'll think of something better later.
