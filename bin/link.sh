@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 set -ue
 
-for DOTFILE in "$HOME"/.dotfiles/.??* ; do
-  [[ "$DOTFILE" == "$HOME/.dotfiles/.git" ]] && continue
-  [[ "$DOTFILE" == "$HOME/.dotfiles/.github" ]] && continue
-  [[ "$DOTFILE" == "$HOME/.dotfiles/.DS_Store" ]] && continue
+CURRENT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+echo "[Step 1] Link dotfiles..."
+for DOTFILE in "$CURRENT_DIR"/{git,runcom}/.??* ; do
   ln -snfv "$DOTFILE" "$HOME"
 done
 
 # Wrap up
-unset DOTFILE
+echo "[Step 2] Wrap up..."
+unset DOTFILE CURRENT_DIR
+
+echo "[Step 3] Reload zsh..."
+source ${HOME}/.zshrc
