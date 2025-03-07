@@ -11,7 +11,7 @@ echo -e "\033[0;32m Upgrade outdated casks and outdated, unpinned formulae using
 brew upgrade
 
 echo -e "\033[0;32m Bundler for non-Ruby dependencies from Homebrew, Homebrew Cask, Mac App Store, Whalebrew and Visual Studio Code...\033[0m"
-brew bundle
+brew bundle --file=${HOME}/.dotfiles/bin/Brewfile
 
 echo -e "\033[0;32m Remove stale lock files and outdated downloads for all formulae and casks, and remove old versions of installed formulae...\033[0m"
 brew cleanup
