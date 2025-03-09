@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 set -ue
 
 CURRENT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -8,7 +8,6 @@ for DOTFILE in "$CURRENT_DIR"/{git,runcom}/.??* ; do
   ln -snfv "$DOTFILE" "$HOME"
 done
 
-# Wrap up
 echo "[Step 2] Wrap up..."
 unset DOTFILE CURRENT_DIR
 

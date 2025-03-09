@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 set -ue
 
 echo -e "\033[0;32m Check your system for potential problems...\033[0m"

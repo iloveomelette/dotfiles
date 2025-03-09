@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 set -ue
 
 if [ "$(uname)" != "Darwin" ]; then

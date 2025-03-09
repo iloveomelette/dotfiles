@@ -6,7 +6,7 @@ It only targets macOS for now.
 
 ## :wrench: <samp>Setup</samp>
 
-### :sparkles: <samp>Sparkling fresh installation of macOS</samp>
+### :sparkles: <samp>Install Xcode</samp>
 
 If you have not yet installed Xcode, run the following commands.
 
@@ -15,20 +15,15 @@ sudo softwareupdate -i -a
 xcode-select --install
 ```
 
-### :rocket: <samp>Installing packages, system configuration</samp>
+### :rocket: <samp>Setup</samp>
 
-1. Clone manually into the desired location.
-
-```sh
-git clone https://github.com/iloveomelette/dotfiles.git ~/.dotfiles
-```
-
-2. Run the setup script.
+Run the following command and the setup will be done automatically.
 
 ```sh
-cd ~/.dotfiles
-make
+zsh -c "$(curl -s https://raw.githubusercontent.com/iloveomelette/dotfiles/master/setup/install.zsh)"
 ```
+
+## :memo: <samp>Note</samp>
 
 The installation process in the Makefile is tested on every push in this GitHub Action.
 
