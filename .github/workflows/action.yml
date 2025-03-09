@@ -14,7 +14,7 @@ jobs:
 
     defaults:
       run:
-        shell: bash
+        shell: zsh {0} # ref: https://zenn.dev/shundeveloper/articles/2fdf4bf627072f
 
     steps:
       - name: Checkout code
