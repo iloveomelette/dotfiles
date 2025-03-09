@@ -1,6 +1,6 @@
 # Execute all.
 
-all: init link
+all: init link brew link-vscode
 
 # Initialize preferences.
 init:
@@ -19,3 +19,9 @@ brew:
 	@echo "\033[0;32mStart Start bundle...\033[0m"
 	@bin/brew.sh
 	@echo "\033[0;32m✨ success\033[0m Completed packages"
+
+# Link vscode settings.
+link-vscode:
+	@echo "\033[0;32mStart linking for vscode...\033[0m"
+	@bin/link-vscode.sh
+	@echo "\033[0;32m✨ success\033[0m Link dotfiles"
