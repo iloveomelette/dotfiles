@@ -20,7 +20,7 @@ xcode-select --install
 Run the following command and the setup will be done automatically.
 
 ```sh
-zsh -c "$(curl -s https://raw.githubusercontent.com/iloveomelette/dotfiles/master/setup/install.zsh)"
+zsh -c "$(curl -s https://raw.githubusercontent.com/iloveomelette/dotfiles/master/bin/install.zsh)"
 ```
 
 ## :memo: <samp>Note</samp>

@@ -18,4 +18,4 @@ jobs:
 
     steps:
       - name: Setup
-        run: zsh -c "$(curl -s https://raw.githubusercontent.com/iloveomelette/dotfiles/master/setup/install.zsh)"
+        run: zsh -c "$(curl -s https://raw.githubusercontent.com/iloveomelette/dotfiles/master/bin/install.zsh)"
