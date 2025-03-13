@@ -17,5 +17,14 @@ jobs:
         shell: zsh {0} # ref: https://zenn.dev/shundeveloper/articles/2fdf4bf627072f
 
     steps:
-      - name: Setup
-        run: zsh -c "$(curl -s https://raw.githubusercontent.com/iloveomelette/dotfiles/master/bin/install.zsh)"
+      - name: Init
+        run: make init
+
+      - name: Brew
+        run: make brew
+
+      - name: link-vscode
+        run: make link-vscode
+
+      - name: macos
+        run: make macos
