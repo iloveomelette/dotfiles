@@ -17,6 +17,9 @@ jobs:
         shell: zsh {0} # ref: https://zenn.dev/shundeveloper/articles/2fdf4bf627072f
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Init
         run: make init
 
