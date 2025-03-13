@@ -17,17 +17,17 @@ jobs:
         shell: zsh {0} # ref: https://zenn.dev/shundeveloper/articles/2fdf4bf627072f
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Clone dotfiles
+        run: git clone https://github.com/iloveomelette/dotfiles ~/.dotfiles
 
       - name: Init
-        run: make init
+        run: cd ~/.dotfiles && make init
 
       # - name: Brew
       #   run: make brew
 
       - name: link-vscode
-        run: make link-vscode
+        run: cd ~/.dotfiles && make link-vscode
 
       - name: macos
-        run: make macos
+        run: cd ~/.dotfiles && make macos
