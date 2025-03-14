@@ -2,6 +2,7 @@
 
 # \=== Shortcuts ===\
 alias reload="source ~/.zshrc"
+alias gtp='cd $(ghq list -p | fzf)'
 
 # \=== Docker ===\
 alias up="docker compose up"
