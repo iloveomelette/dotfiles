@@ -17,10 +17,31 @@ xcode-select --install
 
 ### :rocket: <samp>Setup</samp>
 
-Run the following command and the setup will be done automatically.
+#### 1. Automatic Installation
 
 ```sh
 zsh -c "$(curl -s https://raw.githubusercontent.com/iloveomelette/dotfiles/master/bin/install.zsh)"
+```
+
+#### 2. VSCode Settings
+
+**2-1. Open VSCode**
+
+```sh
+code
+```
+
+**2-2. Setup Extensions**
+
+1. Open the command palette (`Cmd + Shift + P`), then open user settings and keyboard shortcuts.
+2. Create `JSON` files.
+3. Execute the following command.
+
+```sh
+ls -al ${HOME}/Library/Application\ Support/Code/User
+// -> Confirm the existence of the settings.json and keybindings.json files and snippets directory.
+
+make link-vscode
 ```
 
 ## :memo: <samp>Note</samp>

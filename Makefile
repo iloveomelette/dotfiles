@@ -1,6 +1,6 @@
 # Execute all.
 
-all: init link brew link-vscode macos
+all: init link brew macos
 
 # Initialize preferences.
 init:

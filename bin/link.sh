@@ -9,5 +9,4 @@ done
 echo "[Step 2] Wrap up..."
 unset DOTFILE
 
-echo "[Step 3] Reload zsh..."
-source ${HOME}/.zshrc
+echo "[Step 3] Open a separate tab to activate zinit later..."
