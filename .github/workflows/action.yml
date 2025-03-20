@@ -20,14 +20,14 @@ jobs:
       - name: Clone dotfiles
         run: git clone https://github.com/iloveomelette/dotfiles ~/.dotfiles
 
-      - name: Init
-        run: cd ~/.dotfiles && make init
+      - name: Automatic Installation
+        run: cd ~/.dotfiles && make
 
-      # - name: Brew
-      #   run: make brew
-
-      - name: link-vscode
-        run: cd ~/.dotfiles && make link-vscode
-
-      - name: macos
-        run: cd ~/.dotfiles && make macos
+      - name: VSCode Settings
+        run: |
+          cd ~/.dotfiles
+          mkdir -p ${HOME}/Library/Application\ Support/Code/User
+          mkdir -p ${HOME}/Library/Application\ Support/Code/User/snippets
+          touch ${HOME}/Library/Application\ Support/Code/User/settings.json
+          touch ${HOME}/Library/Application\ Support/Code/User/keybindings.json
+          make link-vscode
