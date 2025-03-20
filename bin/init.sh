@@ -18,4 +18,8 @@ if command -v brew >/dev/null 2>&1; then
 else
   echo -e "\033[0;32m Installing Homebrew...\033[0m"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  echo -e "\033[0;32m Add Homebrew to my PATH...\033[0m"
+  echo >> ${HOME}/.zprofile
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ${HOME}/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
