@@ -16,7 +16,7 @@ link:
 
 # Brew bundle.
 brew:
-	@echo "\033[0;32mStart Start bundle...\033[0m"
+	@echo "\033[0;32mStart bundle...\033[0m"
 	@bin/brew.sh
 	@echo "\033[0;32m✨ success\033[0m Completed packages"
 

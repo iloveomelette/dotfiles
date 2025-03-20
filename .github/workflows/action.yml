@@ -21,7 +21,11 @@ jobs:
         run: git clone https://github.com/iloveomelette/dotfiles ~/.dotfiles
 
       - name: Automatic Installation
-        run: cd ~/.dotfiles && make
+        run: |
+          cd ~/.dotfiles
+          brew update
+          brew upgrade
+          make
 
       - name: VSCode Settings
         run: |
