@@ -6,13 +6,11 @@
   excludesfile = ~/.gitignore_global
   editor = vim
 
+[include]
+  path = ~/.gitconfig.local
+
 [init]
   defaultBranch = main
-
-[user]
-  # NOTE: First, set your email `export EMAIL=<YOUR_EMAIL>`.
-  # TODO: I'll think of something better later.
-  name = iloveomelette
 
 [color]
   # Set color (the following commands will automatically add color)

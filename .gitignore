@@ -44,3 +44,4 @@
 ## git ##
 !/git/
 !/git/.gitconfig
+/git/.gitconfig.local
