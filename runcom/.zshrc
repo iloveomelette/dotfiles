@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit
+
 #
 # Official GitHub repository: https://github.com/zdharma-continuum/zinit
 # ==========================
@@ -66,6 +69,13 @@ done
 if command -v mise >/dev/null 2>&1; then
   eval "$(mise activate zsh)"
 fi
+
+#
+# =============================
+# Enable kubectl autocompletion
+# =============================
+#
+source <(kubectl completion zsh)
 
 #
 # =======
