@@ -78,5 +78,6 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "explicit",
   "workbench.list.smoothScrolling": true,
-  "github.copilot.editor.enableAutoCompletions": true
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.nextEditSuggestions.enabled": true
 }
