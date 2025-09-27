@@ -19,22 +19,3 @@ jobs:
     steps:
       - name: Clone dotfiles
         run: git clone https://github.com/iloveomelette/dotfiles ~/.dotfiles
-
-      - name: Automatic Installation
-        run: |
-          cd ~/.dotfiles
-          brew update
-          brew upgrade
-          brew untap aws/tap
-          brew untap homebrew/cask
-          brew untap homebrew/core
-          make
-
-      - name: VSCode Settings
-        run: |
-          cd ~/.dotfiles
-          mkdir -p ${HOME}/Library/Application\ Support/Code/User
-          mkdir -p ${HOME}/Library/Application\ Support/Code/User/snippets
-          touch ${HOME}/Library/Application\ Support/Code/User/settings.json
-          touch ${HOME}/Library/Application\ Support/Code/User/keybindings.json
-          make link-vscode
