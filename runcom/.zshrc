@@ -75,7 +75,9 @@ fi
 # Enable kubectl autocompletion
 # =============================
 #
-source <(kubectl completion zsh)
+if command -v kubectl >/dev/null 2>&1; then
+  source <(kubectl completion zsh)
+fi
 
 #
 # =======
