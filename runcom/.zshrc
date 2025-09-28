@@ -51,6 +51,28 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 # ========================
 #
 export PURE_PROMPT_SYMBOL="$" # pure theme
+export FZF_DEFAULT_OPTS='--height 20% --reverse'
+export LANG=ja_JP.UTF-8
+setopt auto_cd
+setopt auto_pushd
+setopt nobeep
+setopt complete_aliases
+
+# zsh history settings
+setopt share_history
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_find_no_dups
+setopt hist_reduce_blanks
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=100000
+SAVEHIST=100000
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
 
 #
 # ========================================

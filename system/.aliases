@@ -18,3 +18,6 @@ alias rollback="docker compose run --rm app rails db:rollback"
 alias abort="docker compose run --rm app rails db:abort_if_pending_migrations"
 alias seed="docker compose run --rm app rails db:seed"
 alias routes="docker compose run --rm app rails routes"
+
+# \=== Kubernetes ===\
+alias k="kubectl"

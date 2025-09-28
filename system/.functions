@@ -4,3 +4,14 @@
 function mkd() {
   mkdir -p "$@" && cd "$_";
 }
+
+# Generate a random base64 key
+function keygen() {
+  local length=12
+  echo "$(openssl rand -base64 $length)"
+}
+
+# Generate a UUID
+function uuid() {
+  uuidgen | tr \[:upper:\] \[:lower:\]
+}
